@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>珍宠屋 微量元素</title>
+</head>
+
+<style>
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    #title {
+        font-size: 1.2rem;
+    }
+
+    main {
+        width: 900px;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    main > * {
+        margin: 8px 0;
+    }
+
+    #main-pic-hover {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    #main-pic {
+        width: 600px;
+    }
+
+    #attribute{
+        color: rgb(90, 90, 90);
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #attribute > .attr {
+        width: 50%;
+        padding: 3px;
+    }
+    #spec{
+        display: flex;
+    }
+    #spec > * {
+        width: 50%;
+    }
+    .price{
+        color: red;
+        font-size: 1.5rem;
+    }
+    @media all and (max-width: 900px) {
+        main {
+            width: 100%;
+        }
+
+        #main-pic {
+            width: 80%;
+        }
+    }
+</style>
+
+<body>
+    <main>
+        <div id="main-pic-hover">
+            <img title="珍宠屋" id="main-pic" src="./images/wl400.jpg" />
+        </div>
+        <span id="title">珍宠屋 微量元素 200g约400片</span>
+        <span class="price">￥25</span>
+        <div id="attribute">
+            <div class="attr">
+                <label>品牌：</label>
+                <span>珍宠屋</span>
+            </div>
+            <div class="attr">
+                <label>净含量：</label>
+                <span>200g</span>
+            </div><div class="attr">
+                <label>保质期：</label>
+                <span>24个月</span>
+            </div>
+            <div class="attr">
+                <label>储存方式：</label>
+                <span>避光避潮</span>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
